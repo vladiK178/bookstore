@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   if (!localStorage.getItem("books")) {
-    // Initialisiere die Bücherdaten, falls noch nicht geschehen
+    // Initialisiere die Bücherdaten 
     const books = [
       {
         name: "Die Geheimnisse des Ozeans",
