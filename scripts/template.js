@@ -7,30 +7,30 @@ function renderBooks() {
     const bookElement = document.createElement("div");
     bookElement.className = "book";
     bookElement.innerHTML = `
-            <h2>${book.name}</h2>
-            <p>Author: ${book.author}</p>
-            <p>Genre: ${book.genre}</p>
-            <p>Price: ${book.price} €</p>
-            <p>Published: ${book.publishedYear}</p>
-            <button onclick="toggleLike(${index})">${
+          <h2>${book.name}</h2>
+          <p>Author: ${book.author}</p>
+          <p>Genre: ${book.genre}</p>
+          <p>Published: ${book.publishedYear}</p>
+          <p>Price: ${book.price} €</p>
+          <button onclick="toggleLike(${index})">${
       book.liked ? "Dislike" : "Like"
     }</button>
-            <span>Likes: ${book.likes}</span>
-            <div>
-                <h3>Comments:</h3>
-                <ul>
-                    ${book.comments
-                      .map(
-                        (comment) =>
-                          `<li><strong>${comment.name}:</strong> ${comment.comment}</li>`
-                      )
-                      .join("")}
-                </ul>
-                <input type="text" id="comment-name-${index}" placeholder="Your name">
-                <textarea id="comment-text-${index}" placeholder="Your comment"></textarea>
-                <button onclick="addComment(${index})">Add Comment</button>
-            </div>
-        `;
+          <span>Likes: ${book.likes}</span>
+          <div>
+              <h3>Comments:</h3>
+              <ul>
+                  ${book.comments
+                    .map(
+                      (comment) =>
+                        `<li><strong>${comment.name}:</strong> ${comment.comment}</li>`
+                    )
+                    .join("")}
+              </ul>
+              <input type="text" id="comment-name-${index}" placeholder="Your name">
+              <textarea id="comment-text-${index}" placeholder="Your comment"></textarea>
+              <button onclick="addComment(${index})">Add Comment</button>
+          </div>
+      `;
     container.appendChild(bookElement);
   });
 }
