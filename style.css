@@ -110,3 +110,19 @@ h1 {
 .book textarea {
   resize: vertical;
 }
+
+@media (max-width: 1024px) {
+  .book {
+    width: calc(50% - 10px); /* 2 Bücher pro Reihe auf Tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .book {
+    width: 100%; /* 1 Buch pro Reihe auf Mobilgeräten */
+  }
+
+  h1 {
+    font-size: 24px; /* Kleinere Schriftgröße für Mobilgeräte */
+  }
+}
