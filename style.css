@@ -1,0 +1,38 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+#books-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book h2 {
+  margin-top: 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
