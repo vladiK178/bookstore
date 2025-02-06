@@ -1,3 +1,4 @@
+// template.js
 function renderBooks() {
   const books = JSON.parse(localStorage.getItem("books")) || [];
   const container = document.getElementById("books-container");
@@ -12,9 +13,9 @@ function renderBooks() {
           <p>Genre: ${book.genre}</p>
           <p>Published: ${book.publishedYear}</p>
           <p>Price: ${book.price} €</p>
-          <button onclick="toggleLike(${index})">${
-      book.liked ? "Dislike" : "Like"
-    }</button>
+          <button class="like-button ${
+            book.liked ? "liked" : ""
+          }" onclick="toggleLike(${index})">❤️</button>
           <span>Likes: ${book.likes}</span>
           <div>
               <h3>Comments:</h3>
