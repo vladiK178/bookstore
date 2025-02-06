@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 20px;
   background-image: url("./img/books-2596809_1280.jpg");
