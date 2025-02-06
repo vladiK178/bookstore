@@ -30,6 +30,7 @@ h1 {
   width: calc(
     33.33% - 14px
   ); /* 3 Bücher pro Reihe mit Abstand (20px Gap / 3 = ~14px pro Buch) */
+  box-sizing: border-box; /* Damit Padding in der Breite enthalten ist */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -99,7 +100,7 @@ h1 {
 
 .book input,
 .book textarea {
-  width: 100%;
+  width: 93%;
   margin-top: 10px;
   padding: 10px;
   border: 1px solid #ddd;
