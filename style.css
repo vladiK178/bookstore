@@ -1,9 +1,8 @@
-/* style.css */
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 20px;
-  background-image: url("background.jpg"); /* Hintergrundbild */
+  background-image: url("./img/books-2596809_1280.jpg");
   background-size: cover;
   background-position: center;
   color: #333;
@@ -28,7 +27,9 @@ h1 {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 20px;
-  width: calc(33.33% - 40px); /* 3 Bücher pro Reihe mit Abstand */
+  width: calc(
+    33.33% - 14px
+  ); /* 3 Bücher pro Reihe mit Abstand (20px Gap / 3 = ~14px pro Buch) */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
