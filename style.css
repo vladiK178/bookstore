@@ -102,7 +102,9 @@ h1 {
   background-color: #f1f1f1;
   margin: 5px 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px; /* Abgerundete Ecken */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
+  border: 1px solid #ddd; /* Optional: Rahmen für die Kommentare */
 }
 
 .book input,
