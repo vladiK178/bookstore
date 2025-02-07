@@ -109,11 +109,21 @@ h1 {
 
 .book input,
 .book textarea {
-  width: 93%;
+  width: 100%;
   margin-top: 10px;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px; /* Abgerundete Ecken */
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.book input:focus,
+.book textarea:focus {
+  border-color: #007bff; /* Farbe beim Fokussieren */
+  outline: none; /* Entfernt den Standard-Fokus-Rahmen */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Leichter Schatten beim Fokussieren */
 }
 
 .book textarea {
