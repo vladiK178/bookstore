@@ -5,6 +5,26 @@
   font-style: normal;
 }
 
+/* Scrollbalken für Webkit-Browser (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+  width: 12px; /* Breite des Scrollbalkens */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Hintergrundfarbe des Scrollbalken-Tracks */
+  border-radius: 10px; /* Abgerundete Ecken */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d4a373; /* Hellbraune Farbe für den Scrollbalken */
+  border-radius: 10px; /* Abgerundete Ecken */
+  border: 3px solid #f5f5f5; /* Rand um den Scrollbalken */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #b08968; /* Dunkleres Hellbraun beim Hover */
+}
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
