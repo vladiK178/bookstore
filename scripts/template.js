@@ -1,3 +1,4 @@
+// Funktion zum Rendern der Bücher
 function renderBooks() {
   const books = JSON.parse(localStorage.getItem("books")) || [];
   const container = document.getElementById("books-container");
