@@ -5,24 +5,23 @@
   font-style: normal;
 }
 
-/* Scrollbalken für Webkit-Browser (Chrome, Safari, Edge) */
 body::-webkit-scrollbar {
-  width: 12px; /* Breite des Scrollbalkens */
+  width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #f5f5f5; /* Hintergrundfarbe des Scrollbalken-Tracks */
-  border-radius: 10px; /* Abgerundete Ecken */
+  background: #f5f5f5;
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #d4a373; /* Hellbraune Farbe für den Scrollbalken */
-  border-radius: 10px; /* Abgerundete Ecken */
-  border: 3px solid #f5f5f5; /* Rand um den Scrollbalken */
+  background-color: #d4a373;
+  border-radius: 10px;
+  border: 3px solid #f5f5f5;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #b08968; /* Dunkleres Hellbraun beim Hover */
+  background-color: #b08968;
 }
 
 body {
@@ -45,19 +44,17 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start; /* Bücher linksbündig ausrichten */
-  max-width: 1200px; /* Begrenzung der Breite für 3 Bücher pro Reihe */
-  margin: 0 auto; /* Zentrieren des Containers */
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .book {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 20px;
-  width: calc(
-    33.33% - 14px
-  ); /* 3 Bücher pro Reihe mit Abstand (20px Gap / 3 = ~14px pro Buch) */
-  box-sizing: border-box; /* Damit Padding in der Breite enthalten ist */
+  width: calc(33.33% - 14px);
+  box-sizing: border-box;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -96,12 +93,12 @@ h1 {
   border: none;
   cursor: pointer;
   font-size: 24px;
-  color: #ccc; /* Standardfarbe für das Herz */
+  color: #ccc;
   transition: color 0.3s ease;
 }
 
 .book .like-button.liked {
-  color: red; /* Rotes Herz, wenn geliked */
+  color: red;
 }
 
 .book span {
@@ -122,9 +119,9 @@ h1 {
   background-color: #f1f1f1;
   margin: 5px 0;
   padding: 10px;
-  border-radius: 10px; /* Abgerundete Ecken */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
-  border: 1px solid #ddd; /* Optional: Rahmen für die Kommentare */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 .book input,
@@ -133,7 +130,7 @@ h1 {
   margin-top: 10px;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 10px; /* Abgerundete Ecken */
+  border-radius: 10px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   box-sizing: border-box;
@@ -141,9 +138,9 @@ h1 {
 
 .book input:focus,
 .book textarea:focus {
-  border-color: #007bff; /* Farbe beim Fokussieren */
-  outline: none; /* Entfernt den Standard-Fokus-Rahmen */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Leichter Schatten beim Fokussieren */
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .book textarea {
@@ -152,16 +149,16 @@ h1 {
 
 @media (max-width: 1024px) {
   .book {
-    width: calc(50% - 10px); /* 2 Bücher pro Reihe auf Tablets */
+    width: calc(50% - 10px);
   }
 }
 
 @media (max-width: 768px) {
   .book {
-    width: 100%; /* 1 Buch pro Reihe auf Mobilgeräten */
+    width: 100%;
   }
 
   h1 {
-    font-size: 24px; /* Kleinere Schriftgröße für Mobilgeräte */
+    font-size: 24px;
   }
 }
